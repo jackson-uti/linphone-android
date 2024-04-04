@@ -82,7 +82,7 @@ class CoreService : CoreService() {
         // Done elsewhere
     }
 
-    override fun showForegroundServiceNotification() {
+    fun showForegroundServiceNotification() {
         Log.i("[Service] Starting service as foreground")
         coreContext.notificationsManager.startCallForeground(this)
     }
